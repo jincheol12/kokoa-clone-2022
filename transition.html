@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lnag = "kr">
+    <head>
+        <title>The Nico Times</title>
+        <style>  /* transition 속성은 state가 "없는" 요소에 붙여야함 */
+            a {
+                color : wheat;
+                background-color: tomato;
+                text-decoration: none;
+                padding: 3px 5px; 
+                border-radius: 5px;
+                font-size : 55px;
+                transition: all 5s ease-in-out;
+                /* transition에서 적용시킬 속성들은 transition이 없는 곳에서도 동일하게 적용시켜줘야함 */
+
+            }
+            a:hover { /* 마우스를 위에다 올려놓을떄 변화를 일으킴 (hover: state) */
+                border-radius: 30px;
+                color: tomato;
+                background-color: wheat;
+
+
+            }
+        </style>
+    </head>
+<body>
+    <a href = "#">Go Home</a>
+</body>
+</html>

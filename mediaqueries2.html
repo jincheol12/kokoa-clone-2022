@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Jinchoel Times</title>
+    <style>
+        body{   /*전체 body에 대한 적용 */
+            display : flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        div { 
+            background-color: teal;
+            width: 200px; 
+            height: 200px;
+        }
+        
+        @media screen and (min-width:601px) and (max-width: 1200px) {
+            div{
+                background-color: wheat; 
+            }
+        }
+        span { /* span ==> "Please filp your Phone" */
+            font-size: 35px;
+        }
+        @media screen and (orientation:landscape) { 
+            /*화면을 가로로 돌렸을시 , orientation :방향을 뜻함 ,landscape : 가로*/
+            span{  
+                display: none;  /*가로로 돌렸을때는 문구 안나오게 */
+             }
+        @media print { /*사용자가 프린트할때 적용되는 css */
+            body{
+                background-color: tomato;
+            }
+        }
+
+        }
+    </style>
+<body>
+    <div></div>
+    <span>Please filp your Phone</span>
+
+</body>
+    </head>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Jinchoel Times</title>
+    <style>
+        body{
+            display : flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        div {
+            background-color: teal;
+            width: 200px;
+            height: 200px;
+        }
+        @media screen and (max-width: 600px) {  /*화면크기에 따라 차등 적용*/
+            /* media Query 안에 원하는 css 스타일을 적용 */
+            div{
+                background-color: tomato;
+            }
+        
+        @media screen and(min-width:601px) and (max-width: 1200px) {  /*화면크기에 따라 차등 적용*/
+            div{
+                background-color: teal; 
+            }
+        
+        @media screen and (min-width: 1200px) {  /*화면크기에 따라 차등 적용*/
+            div{
+                background-color: wheat; 
+            } 
+        }
+    }
+}
+    </style>
+<body>
+    <div></div>
+</body>
+    </head>
+</html>
